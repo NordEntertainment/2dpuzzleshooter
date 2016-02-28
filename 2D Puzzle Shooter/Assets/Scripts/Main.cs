@@ -2,19 +2,21 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class Main : MonoBehaviour {
+public class Main : MonoBehaviour
+{
 
 	public GameObject block;
 
 	private Vector2 spawn;
+	public int maxSpawns = 55;
+	public float minX = -800;
+	public float maxX = 800;
+	public float minY = -500;
+	public float maxY = 500;
 
 	// Use this for initialization
-	void Start () {
-
-		float posY =  Random.Range (0f, 15f);
-		float posX = Random.Range(15, 30f);
-
-		Vector2 spawn = new Vector2 (posX, posY);
+	void Start ()
+	{
 
 		GenerateBlocks ();
 
@@ -22,14 +24,25 @@ public class Main : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+	{
+
+	
 	
 	}
 
-	void GenerateBlocks(){
+	void GenerateBlocks ()
+	{
+		
 
-		GameObject go = Instantiate (block, spawn, Quaternion.identity) as GameObject;
-		go.name = ("Position = " + spawn);
+		for (int i = 0; i < maxSpawns; i++) {
+			Color ran = Random.ColorHSV ();
+			Vector2 spawn = new Vector2 (Random.Range (minX, maxX), Random.Range (minY, maxY));
+			GameObject go = Instantiate (block, spawn, Quaternion.identity) as GameObject;
+			go.GetComponent<SpriteRenderer> ().color = ran;
+			go.name = ("Position = " + spawn);
+
+		}
 
 
 	}
