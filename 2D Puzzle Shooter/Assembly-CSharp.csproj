@@ -47,12 +47,6 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Main.cs" />
      <Compile Include="Assets\Scripts\SpawnTester.cs" />
-<<<<<<< HEAD
-=======
- <Reference Include="UnityEngine.Networking">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
->>>>>>> origin/master
  <Reference Include="UnityEngine.UI">
  <HintPath>G:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
