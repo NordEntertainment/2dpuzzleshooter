@@ -28,7 +28,8 @@ public class Main : MonoBehaviour {
 
 	void GenerateBlocks(){
 
-		Instantiate (block, spawn, Quaternion.identity);
+		GameObject go = Instantiate (block, spawn, Quaternion.identity) as GameObject;
+		go.name = ("Position = " + spawn);
 
 
 	}
