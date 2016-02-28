@@ -45,8 +45,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Levels\TestLevel.cs" />
      <Compile Include="Assets\Scripts\Main.cs" />
-     <Compile Include="Assets\Scripts\SpawnTester.cs" />
+     <Compile Include="Assets\Scripts\Spawner\SpawnTester.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>G:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

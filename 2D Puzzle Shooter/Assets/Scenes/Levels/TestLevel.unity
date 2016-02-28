@@ -180,6 +180,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 352662365}
   - 114: {fileID: 352662366}
+  - 114: {fileID: 352662367}
   m_Layer: 0
   m_Name: _scripts
   m_TagString: Untagged
@@ -207,11 +208,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 352662364}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 404afedb661f2c849bf2f6c797d25023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Block: {fileID: 175236, guid: 9e192c64b1e9bbe4ab99bca9ba826124, type: 2}
+  maxX: 5
+  minX: -5
+  maxY: 5
+  minY: -5
+  ST: {fileID: 352662367}
+--- !u!114 &352662367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 352662364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64dbb331b60dde449807e963e971d7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Block: {fileID: 175236, guid: 9e192c64b1e9bbe4ab99bca9ba826124, type: 2}
-  maxBox: 50
   maxX: 5
   minX: -5
   maxY: 5
