@@ -125,6 +125,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   block: {fileID: 103918, guid: f23446b2e55314e57b2f8ecbc855b778, type: 2}
+  maxSpawns: 55
+  minX: -800
+  maxX: 800
+  minY: -500
+  maxY: 500
 --- !u!1 &627605160
 GameObject:
   m_ObjectHideFlags: 0
